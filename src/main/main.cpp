@@ -11,6 +11,8 @@ using namespace design_pattern;
 
 int main(int argc, char* argv[])
 {
+  std::locale::global(std::locale("japanese"));
+
   std::unique_ptr<HomeBuildInterface> homeBuilder;
   std::unique_ptr<Director> director(new Director());
   int build_type = 2;
@@ -45,10 +47,10 @@ int main(int argc, char* argv[])
   director->setupBuilder(homeBuilder.get());
 
   BuildHome* build = homeBuilder->getResult();
-  std::cout << "住宅は" << std::endl;
-  std::cout << "構造が[" << build->getPillar() << "]で" << std::endl;
-  std::cout << "外壁が[" << build->getPillar() << "]で" << std::endl;
-  std::cout << "屋根が[" << build->getPillar() << "]です。" << std::endl;
+  std::wcout << L"住宅は" << std::endl;
+  std::wcout << L"構造が[" << build->getPillar() << L"]で" << std::endl;
+  std::wcout << L"外壁が[" << build->getWall() << L"]で" << std::endl;
+  std::wcout << L"屋根が[" << build->getRoof() << L"]です。" << std::endl;
 
   build = nullptr;
 

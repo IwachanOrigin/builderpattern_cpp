@@ -20,8 +20,8 @@ JapaneaseHomeBuilder::~JapaneaseHomeBuilder()
 
 void JapaneaseHomeBuilder::setStructure()
 {
-  m_buildHome->setPillar("木造");
-  m_buildHome->setWall("和風タイル張り");
-  m_buildHome->setRoof("瓦");
+  m_buildHome->setPillar(L"木造");
+  m_buildHome->setWall(L"和風タイル張り");
+  m_buildHome->setRoof(L"瓦");
 }
 

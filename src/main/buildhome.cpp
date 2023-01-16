@@ -4,9 +4,9 @@
 using namespace design_pattern;
 
 BuildHome::BuildHome()
-  : m_pillar("")
-  , m_wall("")
-  , m_roof("")
+  : m_pillar(L"")
+  , m_wall(L"")
+  , m_roof(L"")
 {
 }
 

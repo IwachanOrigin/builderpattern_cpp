@@ -20,8 +20,8 @@ ModernHomeBuilder::~ModernHomeBuilder()
 
 void ModernHomeBuilder::setStructure()
 {
-  m_buildHome->setPillar("軽量鉄骨造");
-  m_buildHome->setWall("コンクリート");
-  m_buildHome->setRoof("コンクリート");
+  m_buildHome->setPillar(L"軽量鉄骨造");
+  m_buildHome->setWall(L"コンクリート");
+  m_buildHome->setRoof(L"コンクリート");
 }
 

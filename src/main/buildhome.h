@@ -13,17 +13,17 @@ public:
   explicit BuildHome();
   ~BuildHome() = default;
 
-  void setPillar(std::string pillar) { m_pillar = pillar; }
-  std::string getPillar() { return m_pillar; }
-  void setWall(std::string wall) { m_wall = wall; }
-  std::string getWall() { return m_wall; }
-  void setRoof(std::string roof) { m_roof = roof; }
-  std::string getRoof() { return m_roof; }
+  void setPillar(std::wstring pillar) { m_pillar = pillar; }
+  std::wstring getPillar() { return m_pillar; }
+  void setWall(std::wstring wall) { m_wall = wall; }
+  std::wstring getWall() { return m_wall; }
+  void setRoof(std::wstring roof) { m_roof = roof; }
+  std::wstring getRoof() { return m_roof; }
 
 private:
-  std::string m_pillar;
-  std::string m_wall;
-  std::string m_roof;
+  std::wstring m_pillar;
+  std::wstring m_wall;
+  std::wstring m_roof;
 };
 
 } // design_pattern
